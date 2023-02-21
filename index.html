@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahbab's Store</title>
+</head>
+
+<body>
+    <script>
+        var userDesired = prompt("What do you wanna buy ? ,vegatables,fruits,meat");
+
+
+        if (userDesired == "vegatables" || userDesired == "fruits" || userDesired == "meat") {   
+            if (userDesired == "vegatables") {
+                var whichOne = prompt("onion , potatos , tomatos:");
+                if (whichOne == "onion" || whichOne == "potatos" || whichOne == "tomatos") {
+                    var quantity = prompt("how much quantity");
+                    if (quantity <= 10) {
+                        alert("Congrats ! You bought " + quantity + " your desired vegatable");
+                    }
+
+                }
+            }
+          
+
+            if (userDesired == "fruits") {
+                var whichOne = prompt("apple , mango , banana:");
+                if (whichOne == "apple" || whichOne == "mango" || whichOne == "banana") {
+                    var quantity = prompt("how much quantity");
+                    if (quantity <= 10) {
+                        alert("Congrats ! You bought " + quantity + " kg your desired fruit");
+                    }
+
+                }
+            }
+
+
+            if (userDesired == "meat") {
+                var whichOne = prompt("mutton , beef , chicken:");
+                if (whichOne == "mutton" || whichOne == "beef" || whichOne == "chicken") {
+                    var quantity = prompt("how much quantity");
+                    if (quantity <= 10) {
+                        alert("Congrats ! You bought " + quantity + " kg your desired meat");
+                    }
+
+                }
+            }
+          
+            
+        }
+        else{
+            alert("plz type right item !");
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
